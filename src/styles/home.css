@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.home {
+  background-color: rgb(92, 154, 224);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.chat-room {
+  border: 2px solid white;
+  width: 400px;
+  height: 500px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  padding: 5px;
+}
+
+.header {
+  height: 50px;
+  background-color: white;
+  border-bottom: 1px solid rgb(92, 154, 224);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  border-radius: 10px 10px 0 0;
+}
+
+.header > img {
+  width: 35px;
+  height: 35px;
+}
+
+.header > .logout {
+  cursor: pointer;
+}
+
+.header > span {
+  font-size: 32px;
+  font-weight: bold;
+  font-family: cursive;
+  color: rgb(66, 109, 158);
+}
+
+.messages {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 10px;
+  height: 400px;
+  background-color: aliceblue;
+  overflow-y: auto;
+}
+
+.scrollbar::-webkit-scrollbar {
+  display: none;
+  width: 3px;
+}
+
+.messages img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.messages .incoming > p {
+  border-radius: 0 10px 10px 10px;
+  padding: 10px;
+  max-width: max-content;
+  font-size: 18px;
+  background-color: rgb(149, 183, 222);
+  color: black;
+  margin-bottom: 20px;
+}
+
+.messages .outgoing {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.messages .outgoing > img {
+  margin-left: 5px;
+}
+
+.messages .outgoing > p {
+  border-radius: 10px 0 10px 10px;
+  padding: 10px;
+  max-width: max-content;
+  font-size: 18px;
+  background-color: rgb(92, 154, 224);
+  color: white;
+  margin-bottom: 20px;
+}
+
+.input-field {
+  height: 50px;
+  background-color: antiquewhite;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background-color: white;
+  border-top: 1px solid rgb(92, 154, 224);
+  border-radius: 0 0 10px 10px;
+}
+
+.input-field > input {
+  width: 100%;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: rgb(66, 109, 158);
+}
+
+.input-field > input::placeholder {
+  color: rgb(92, 154, 224);
+}
+
+.input-field img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+}
